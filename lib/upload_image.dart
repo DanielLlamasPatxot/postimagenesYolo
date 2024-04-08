@@ -138,6 +138,7 @@ class _UploadImageScreenState extends State<UploadImageScreen> {
                         ),
                         // Dibujar detecciones sobre la imagen
                         CustomPaint(
+                          //Ajusto aquí al mismo tamaño que el container para que no descuadren
                           size: Size.square(800),
                           painter: BoundingBoxPainter(detections),
                         ),
